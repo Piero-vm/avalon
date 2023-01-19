@@ -193,6 +193,8 @@ h1 {
   color: white !important;
   padding: 10px 30px;
   border-radius: 4px;
+  position: relative;
+  z-index: 99;
 }
 
 #second-button:hover {
@@ -213,9 +215,20 @@ h1 {
 .divider {
   border-bottom: 2px solid #e5e5e5;
 }
+@media only screen and (max-width: 580px) {
+  #second-button {
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+  }
+}
 
 /* ----------- HERO Desktop  ----------- */
-
+@media only screen and (max-width: 1280px) {
+  #hero img {
+    width: 50%!important;
+  }
+}
 @media only screen and (min-width: 1110px) {
   #hero {
     min-height: 500px;
@@ -249,6 +262,7 @@ h1 {
     margin: 0 auto;
   }
 }
+
 
 /* ==========================================================================
    CHI SIAMO - MOBILE FIRST 
